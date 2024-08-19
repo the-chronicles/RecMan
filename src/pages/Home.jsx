@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -19,16 +20,22 @@ function Home() {
                 Modern, Einzigartig & Animation.
               </h1>
               <div className="flex gap-5 text-xl">
-                <h1 className="rounded-full bg-red-500 px-5 py-1">More Info</h1>
-                <h1 className="rounded-full border-2 border-red-500 px-5 py-1">
-                  Buy
-                </h1>
+                <Link to="/tv">
+                  <h1 className="rounded-full bg-red-500 px-5 py-1">
+                    More Info
+                  </h1>
+                </Link>
+                <Link to="#">
+                  <h1 className="rounded-full border-2 border-red-500 px-5 py-1">
+                    Buy
+                  </h1>
+                </Link>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="sticky top-[30px] mx-auto my-[60px] mb-20 h-[90dvh] w-11/12 rounded-2xl bg-blue-500 shadow-2xl transition ease-in-out hover:-translate-y-1">
+        <div className="sticky top-[30px]  mx-auto my-[60px] mb-20 h-[90dvh] w-11/12 rounded-2xl bg-blue-500 shadow-2xl transition ease-in-out hover:-translate-y-1">
           <div className="relative h-full w-full">
             <img
               src="/img/3.png"
@@ -40,10 +47,14 @@ function Home() {
                 Modern, Einzigartig & Animation.
               </h1>
               <div className="flex gap-5 text-xl">
+              <Link to='/media'>
                 <h1 className="rounded-full bg-red-500 px-5 py-1">More Info</h1>
+                </Link>
+                <Link to='#'>
                 <h1 className="rounded-full border-2 border-red-500 px-5 py-1">
                   Buy
                 </h1>
+                </Link>
               </div>
             </div>
           </div>
@@ -51,7 +62,7 @@ function Home() {
         <div className="sticky top-[30px] mx-auto my-[60px] mb-20 h-[90dvh] w-11/12 rounded-2xl bg-stone-500 shadow-2xl transition ease-in-out hover:-translate-y-1"></div>
         <div className="sticky top-[30px] mx-auto my-[60px] mb-20 h-[90dvh] w-11/12 rounded-2xl bg-orange-500 shadow-2xl transition ease-in-out hover:-translate-y-1"></div>
       </div>
-      
+
       <Footer />
     </>
   );

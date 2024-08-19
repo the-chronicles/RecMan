@@ -5,6 +5,8 @@ import Services from "./pages/Services";
 import Projects from "./pages/Projects";
 import Faq from "./pages/Faq";
 import Contact from "./pages/Contact";
+import TV from "./pages/TV";
+import Media from "./pages/Media";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/project" element={<Projects />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/tv" element={<TV />} />
+        <Route path="/media" element={<Media />} />
       </Routes>
     </BrowserRouter>
   );
