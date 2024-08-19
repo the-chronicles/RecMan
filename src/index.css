@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Figtree';
+    font-weight: 400; /* Regular */
+    font-style: normal;
+    src: url('/fonts/Figtree-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Figtree';
+    font-weight: 500; /* Medium */
+    font-style: normal;
+    src: url('/fonts/Figtree-Medium.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Figtree';
+    font-weight: 600; /* Semibold */
+    font-style: normal;
+    src: url('/fonts/Figtree-SemiBold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Figtree';
+    font-weight: 700; /* Bold */
+    font-style: normal;
+    src: url('/fonts/Figtree-Bold.ttf');
+  }
+  @font-face {
+    font-family: 'Figtree';
+    font-weight: 800; /* extrabold */
+    font-style: normal;
+    src: url('/fonts/Figtree-ExtraBold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Figtree';
+    font-weight: 900; /* Bold */
+    font-style: normal;
+    src: url('/fonts/Figtree-Black.ttf');
+  }
+
+
+  .group::after {
+    content: '';
+    display: block;
+    width: 50%; /* Adjust the width to control the length of the underline */
+    height: 2px; /* Adjust the height to control the thickness of the underline */
+    background-color: red; /* Adjust the color to match your brand */
+    position: relative;
+    bottom: 1px; /* Adjust the bottom offset to position the underline */
+    transform: translateX(-2%); /* Center the underline */
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .group:hover::after {
+    opacity: 1;
+  }
+
+  
